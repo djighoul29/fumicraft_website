@@ -9,6 +9,7 @@
     <title>FumiCraft | Minecraft-сервер аніме-клубу "Fumitsu"</title>
     
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -30,20 +31,23 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
             <div class="container-fluid">
                 <a class="h1 navbar-brand text-white user-select-none mx-3 my-auto">FumiCraft</a>
                 <button type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarMain" class="navbar-toggler" 
                 aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-dark navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#" class="nav-link text-white">Грати</a></li>
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#" class="nav-link text-white">Про проект</a></li>
-                        <button class="btn btn-outline-light px-3 mx-3 my-auto" type="button" href="#">Кабінет</button>
+                        <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-3 mx-3 my-auto" type="button" href="#">
+                            Кабінет
+                        </button>
                     </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -51,17 +55,31 @@
 
 
     <main>
-        <div class="container-fluid">
+        <div class="container-fluid min-vh-100">
             <div class="row">
-                <div class="col-md text-center">
-                    <h1 class="text-white">FumiCraft</h1>
-                    <h2 class="text-white">Нумо грати з нами!</h2>
-                    <button class="btn btn-outline-light m-3 px-5 py-3" type="button" href="#"><span class="h2">Грати</span></button>    <!--<section id="section_id"></section>-->
+                <div class="col text-center text-white">
+                    <h1>FumiCraft</h1>
+                    <h2>Нумо грати з нами!</h2>
+                    <button class="btn btn-outline-light border-3 rounded-start-pill rounded-end-pill m-3 px-5 py-3" type="button" href="#">
+                        <span class="h2">Грати</span>
+                    </button>    <!--<section id="section_id"></section>-->
                 </div>
             </div>
         </div>
 
-
+        <div class="container-fluid" id="about">
+            <div class="row bg-dark">
+                <div class="col text-white">
+                    <div class="item-header">
+                        <h2 class="text-center pt-3">Про проект</h2>
+                    </div>
+                    <hr>
+                    <p class="text-start px-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam molestias incidunt nam, perferendis eveniet! Quisquam, facere soluta reiciendis similique ullam quaerat impedit commodi explicabo dignissimos quos iusto animi amet. Voluptate magni ullam tempore fugiat.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </main>
 </body>
