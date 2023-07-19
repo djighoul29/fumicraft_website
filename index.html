@@ -35,19 +35,26 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <div class="container-fluid">
+                
                 <a class="h1 navbar-brand text-white user-select-none mx-3 my-auto">FumiCraft</a>
+                
                 <button type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarMain" class="navbar-toggler" 
                 aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav ms-auto">
+                        
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#play" class="nav-link text-white">Грати</a></li>
+                        
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#about" class="nav-link text-white">Про проект</a></li>
+                        
                         <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-3 mx-3 my-auto" type="button" data-bs-toggle="modal" data-bs-target="#login-form">
                             Кабінет
                         </button>
+                    
                     </ul>
                 </div>
             </div>
@@ -61,6 +68,7 @@
             <div class="d-flex flex-column min-vh-100 my-auto align-items-center justify-content-center">
                 <div class="row">
                     <div class="col text-center text-white">
+
                         <h1>FumiCraft</h1>
                         <h2>Чого чекаєш? Хутчіш приєднуйся до нас!</h2>
                         <a href="#play">
@@ -68,6 +76,7 @@
                                 <span class="h2">Грати</span>
                             </button>
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -76,16 +85,20 @@
         <div class="container-fluid bg-dark border-bottom-0" id="about">
             <div class="row">
                 <div class="col text-white" style="height: 300px;"> <!-- забрати нафіг style="height: 300px;" як тільки замість "лорем" буде норм текст -->
+                    
                     <div class="item-header">
                         <h2 class="text-center pt-3">Про проект</h2>
                     </div>
+
                     <hr>
+
                     <p class="text-start px-5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Modi ipsam molestias incidunt nam, perferendis eveniet! 
                         Quisquam, facere soluta reiciendis similique ullam quaerat impedit commodi explicabo dignissimos quos iusto animi amet. 
                         Voluptate magni ullam tempore fugiat.
                     </p>
+
                 </div>
             </div>
         </div>
@@ -96,6 +109,7 @@
                     <h2>Інструкція</h2>
                     <hr>
                 </div>
+
                 <div class="col text-start px-4 px-md-5">
                     <p class="h5">Почати гру дуже легко: </p>
                     <p class="my-1">1. Спочатку потрібно створити акаунт та завантажити лаунчер.</p>
@@ -103,20 +117,24 @@
                     <p class="my-1">3. Вибрати збірку і гра автоматично запустить Вас на сервер.</p>
                     <br>
                     <div class="row d-flex">
+                        
                         <div class="col col-lg-7">
                             <a href="#login-form">
-                                <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-md-3 py-md-2" type="button">
+                                <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-md-3 py-md-2" type="button" 
+                                data-bs-toggle="modal" data-bs-target="#register-form">
                                     <span class="h6">Створити акаунт</span>
                                 </button>
                             </a>
                         </div>
+
                         <div class="col-auto ms-3">
-                            <a href="launcher.exe">
+                            <a href="files/launcher.exe">
                                 <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-md-4 py-md-2" type="button">
                                     <span class="h6">Завантажити</span>
                                 </button>
                             </a>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-7 pt-4 pt-md-0">
@@ -134,13 +152,15 @@
             <div class="row text-center text-white">
                 <p>© 2023 Fumitsu. Made by Крякнув, харкнув-плюнув і заліпив скотчем Studio</p>
             </div>
-            
         </div>
     </footer>
 
+
+    
     <!-- МОДАЛЬНІ ФОРМИ -->
 
-    <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="login-form-label" aria-hidden="true">
+    <!-- Логін в кабінет -->
+    <div class="modal fade modal-center" id="login-form" tabindex="-1" aria-labelledby="login-form-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header">
@@ -149,20 +169,53 @@
                 </div>
                 <div class="modal-body p-4">
                     <form>
-                        <!-- Email input -->
-                        <div class="form-floating mb-4 text-dark">
+                        <div class="form-floating mb-2 text-dark">
                             <input type="email" id="email1" class="form-control" placeholder="Email" />
-                            <label for="email1">Email</label>
+                            <label for="email1" class="text-dark">Email</label>
                         </div>
     
-                        <!-- password input -->
                         <div class="form-floating mb-4 text-dark">
                             <input type="password" id="password1" class="form-control" placeholder="Пароль" />
-                            <label for="password1">Пароль</label>
+                            <label for="password1" class="text-dark">Пароль</label>
                         </div>
     
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill btn-block">Увійти</button>
+                        <button type="submit" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill">Увійти</button>
+                        <button type="button" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill float-end" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register-form">Я новий гравець</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Реєстрація -->
+    <div class="modal fade modal-center" id="register-form" tabindex="-1" aria-labelledby="register-form-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="register-form-label">Реєстрація нового гравця</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="form-floating mb-2 text-dark">
+                            <input type="email" id="email2" class="form-control" placeholder="Email" />
+                            <label for="email1" class="text-dark">Email</label>
+                        </div>
+    
+                        <div class="form-floating mb-2 text-dark">
+                            <input type="password" id="password2" class="form-control" placeholder="Пароль" />
+                            <label for="password1" class="text-dark">Пароль</label>
+                        </div>
+
+                        <div class="form-floating mb-4 text-dark">
+                            <input type="password" id="password3" class="form-control" placeholder="Повторіть пароль" />
+                            <label for="password1" class="text-dark">Повторіть пароль</label>
+                        </div>
+    
+                        <!-- Десь тут має бути капча -->
+
+                        <button type="submit" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill">Зареєструватися</button>
+                        <button type="button" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill float-end" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#login-form">Я вже маю акаунт</button>
                     </form>
                 </div>
             </div>
