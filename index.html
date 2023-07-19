@@ -45,11 +45,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#play" class="nav-link text-white">Грати</a></li>
                         <li class="nav-item nav-underline p-0 mx-3 my-auto"><a href="#about" class="nav-link text-white">Про проект</a></li>
-                        <a href="#login-form">
-                            <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-3 mx-3 my-auto" type="button" href="#">
-                                Кабінет
-                            </button>
-                        </a>
+                        <button class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill px-3 mx-3 my-auto" type="button" data-bs-toggle="modal" data-bs-target="#login-form">
+                            Кабінет
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -59,7 +57,7 @@
 
 
     <main>
-        <div class="container-fluid bg-black bg-opacity-25">
+        <div class="container-fluid">
             <div class="d-flex flex-column min-vh-100 my-auto align-items-center justify-content-center">
                 <div class="row">
                     <div class="col text-center text-white">
@@ -129,14 +127,48 @@
 
     </main>
 
+
+
     <footer>
         <div class="container-fluid bg-black pt-4 pb-2">
             <div class="row text-center text-white">
-                <p>Fumitsu - 2023. Made by Крякнув, харкнув-плюнув і заліпив скотчем Studio</p>
+                <p>© 2023 Fumitsu. Made by Крякнув, харкнув-плюнув і заліпив скотчем Studio</p>
             </div>
             
         </div>
     </footer>
+
+    <!-- МОДАЛЬНІ ФОРМИ -->
+
+    <div class="modal fade" id="login-form" tabindex="-1" aria-labelledby="login-form-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="login-form-label">Вхід до кабінету</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-floating mb-4 text-dark">
+                            <input type="email" id="email1" class="form-control" placeholder="Email" />
+                            <label for="email1">Email</label>
+                        </div>
+    
+                        <!-- password input -->
+                        <div class="form-floating mb-4 text-dark">
+                            <input type="password" id="password1" class="form-control" placeholder="Пароль" />
+                            <label for="password1">Пароль</label>
+                        </div>
+    
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-outline-light border-2 rounded-start-pill rounded-end-pill btn-block">Увійти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
